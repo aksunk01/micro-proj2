@@ -43,11 +43,4 @@
 #define SPSR_EL2h           (9 << 0)
 #define SPSR_VALUE_EL2      (SPSR_MASK_ALL | SPSR_EL2h)
 
-// ***************************************
-// CPACR_EL1, Architectural Feature Access Control Register (EL1), Page 1742 of AArch64-Reference-Manual.
-// FPEN bits [21:20]: 0b11 = no trap on FP/SIMD at EL0 or EL1
-// ***************************************
-
-#define CPACR_EL1_FPEN_NOTRAP		(3 << 20)
-
 #endif

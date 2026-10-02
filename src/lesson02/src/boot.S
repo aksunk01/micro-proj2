@@ -48,9 +48,5 @@ el1_entry:
 	bl 	memzero
 
 	mov	sp, #LOW_MEMORY
-
-	// ldr	x0, =CPACR_EL1_FPEN_NOTRAP
-	// msr	cpacr_el1, x0
-
 	bl	kernel_main
 	b 	proc_hang		// should never come here
